@@ -5,7 +5,7 @@
 以下以新建虚拟机做演示：
 
 1. 通过首页的wiki文档安装ddns-go，并进入管理页面。
-1. 以Cloudflare为例：在DNS服务商内选择对应的服务商，并在下方的地方回填token，usename、password、key等相关信息。
+2. 以Cloudflare为例：在DNS服务商内选择对应的服务商，并在下方的地方回填token，usename、password、key等相关信息。
 
 ![](DDNS-go.IPV6.001.jpeg)
 
