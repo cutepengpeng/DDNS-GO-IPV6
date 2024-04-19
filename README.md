@@ -54,7 +54,9 @@ ip2.abc.com?comment=YourComment2
 
 ## 6.偷懒大法：
 
-如果有多条
+如果有多个IPV6需要绑定多条DNS记录，使用管理页面操作相对比较繁琐，则可以考虑直接修改YAML文件。
+
+YAML文件：
 
 ````
 dnsconf:
