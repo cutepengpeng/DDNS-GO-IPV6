@@ -29,9 +29,8 @@ Windows在命令行中使用ipconfig/all命令查询：
 
 注意：不要选择**fe80**开头的v6地址，该类地址为v6的本地链路地址，类似为v4地址中**192.168.1.1**的私网地址。
 ***
-
 ![](2024-04-19_dtv0v/DDNS-go.IPV6.004.jpeg.jpg)
-
+***
 关于Domains绿色部分为自定义传递参数，可参考[ddns-go官方提供Wiki](https://github.com/jeessy2/ddns-go/wiki/%E4%BC%A0%E9%80%92%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%82%E6%95%B0)，上图以CLoudflare为例。
 
 图中的 👉👉**ip1.adc.com** 👈👈代表为您的域名
