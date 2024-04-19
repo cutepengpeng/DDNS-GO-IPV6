@@ -104,6 +104,11 @@ lang: zh #管理页面的语言
         id: ""
         secret:  #需要修改，视域名情况而定，如果域名是使用相同的token就不用修改
 ````
+YAML文件修改完成后需要重启DDNS-GO服务
 
+ubuntu20重启DDNS-GO服务参考命令
+````
+systemctl restart ddns-go.service
+````
 
 感谢作者[jeessy2](https://github.com/jeessy2)的指导
