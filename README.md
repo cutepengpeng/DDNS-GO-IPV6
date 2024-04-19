@@ -23,13 +23,13 @@ Windows在命令行中使用ipconfig/all命令查询：
 
 注意：不要选择fe80开头的v6地址，该类地址为v6的本地链路地址，类似为v4地址中192.168.1.1的私网地址。
 
-![](2024-04-19_dtv0v/DDNS-go.IPV6.001.jpeg)
+![](2024-04-19_dtv0v/DDNS-go.IPV6.004.jpeg.png)
 
 关于Donmains绿色部分为自定义传递参数，可参考ddns-go官方提供Wiki，[https://github.com/jeessy2/ddns-go/wiki/%E4%BC%A0%E9%80%92%E8%87%AA%E5%AE%9A%E4%B9%89%E5%8F%82%E6%95%B0]()，上图以CLoudflare为例。
 
 4、添加第二条DNS记录：在管理页面的顶部点击添加，点击后将会新增配置后续重复前面部分的1、2、3步，避免频繁更新IPV4的DNS记录，可以后面的新增的配置将启用IPV4去勾
 
-![](2024-04-19_dtv0v/DDNS-go.IPV6.001.jpeg)
+![](2024-04-19_dtv0v/DDNS-go.IPV6.005.jpeg.png)
 
 5、总结，每个V6地址可以绑定相同或者不同的域名，每一条DNS记录需要新增一个配置。
 
