@@ -35,7 +35,7 @@ Windows在命令行中使用ipconfig/all命令查询：
 
 图中的 👉👉 ip1.adc.com 👈👈代表为您的域名
 
-图中的 👉👉 ?comment=YourComment1 👈👈 ,👉 ? 👈 根据作者[jeessy2](https://github.com/jeessy2)所说理解为DNS记录的备注，可自定义但同一域名下需要唯一，我的做法是：当正则表达式填写 **@2** 时， 则**?comment=YourComment2**。（注意：第一个IPV6不用写自定义参数，直接写域名即可，写了日志会报错）
+图中的 👉👉 ?comment=YourComment1 👈👈 ,👉 ? 👈 后面的部分根据作者[jeessy2](https://github.com/jeessy2)所说理解为DNS记录的备注，可自定义但同一域名下需要唯一，我的做法是：当正则表达式填写 **@2** 时， 则**?comment=YourComment2**。（注意：第一个IPV6不用写自定义参数，直接写域名即可，写了日志会报错）
 
 示例：如果正向表达式填写 **@2** 的时候，**Domains**部分填写
 ````
