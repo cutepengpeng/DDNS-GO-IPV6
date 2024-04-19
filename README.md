@@ -1,4 +1,4 @@
-# ﻿**关于DDNS-go，多个IPV6的绑定的使用方式**
+# ﻿**关于DDNS-go，多个IPV6的绑定域名的食用指北**
 
 本教程主要针对VPS或主机下拥有多个IPV6地址，绑定同一域名或者不同域名的场景。
 
@@ -35,7 +35,7 @@ Windows在命令行中使用ipconfig/all命令查询：
 
 图中的 👉👉**ip1.adc.com** 👈👈代表为您的域名
 
-图中的 👉👉**?comment=YourComment1** 👈👈固定写法，**YourComment**后面的数字可以自定义，我的做法是：当正则表达式填写 **@2** 时， 则**?comment=YourComment2**。（注意：第一个IPV6不用写自定义参数，直接写域名即可，写了日志会报错）
+图中的 👉👉**?comment=YourComment1** 👈👈 ,👉**?**👈 根据作者[jeessy2](https://github.com/jeessy2)所说理解为DNS记录的备注，可自定义但同一域名下需要唯一，我的做法是：当正则表达式填写 **@2** 时， 则**?comment=YourComment2**。（注意：第一个IPV6不用写自定义参数，直接写域名即可，写了日志会报错）
 
 示例：如果正向表达式填写 **@2** 的时候，**Domains**部分填写
 ````
@@ -53,3 +53,8 @@ ip2.abc.com?comment=YourComment2
 每个V6地址可以绑定相同或者不同的域名，但每一条DNS记录需要新增一个配置。
 
 **吐槽：因为想偷懒曾尝试直接修改ddns-go.yaml文件，修改完后刷新管理页面配置并没有生效，只能老老实实在管理页面新增。**
+
+
+
+
+感谢作者[jeessy2](https://github.com/jeessy2)的指导
