@@ -94,8 +94,16 @@ webhook:
 notallowwanaccess: false #是否允许外网登录
 lang: zh #管理页面的语言
 ````
-
-
+增加配置后需要修改的字段
+````
+        ipv6reg: '' #需要修改，@1，@2
+        domains:
+            - ip.abc.com  #需要修改，域名相同的情况下修改自定义的备注，参考上文第3点
+      dns:
+        name: cloudflare #需要修改，域名在同一DNS托管商可不修改
+        id: ""
+        secret:  #需要修改，视域名情况而定，如果域名是使用相同的token就不用修改
+````
 
 
 感谢作者[jeessy2](https://github.com/jeessy2)的指导
