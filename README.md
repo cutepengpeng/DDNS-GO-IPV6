@@ -60,6 +60,7 @@ YAML文件：
 
 ````
 dnsconf:
+#单个配置开始
     - ipv4: #ipv4部分
         enable: true #勾选启用ipv4=true，反则=false
         gettype: url #使用接口获取=url、使用通过网卡获取=netInterface
@@ -82,6 +83,7 @@ dnsconf:
         id: ""
         secret:  #cloudflare的token
       ttl: ""
+#单个配置的结束，可在此处插入上面部分配置作为第二配置
 user:
     username: #登录管理页面用户名称
     password: #登录管理页面用户密码
