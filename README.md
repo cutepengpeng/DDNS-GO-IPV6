@@ -52,7 +52,44 @@ ip2.abc.com?comment=YourComment2
 
 每个V6地址可以绑定相同或者不同的域名，但每一条DNS记录需要新增一个配置。
 
-**吐槽：因为想偷懒曾尝试直接修改ddns-go.yaml文件，修改完后刷新管理页面配置并没有生效，只能老老实实在管理页面新增。**
+## 6.偷懒大法：
+
+如果有多条
+
+````
+dnsconf:
+    - ipv4: #ipv4部分
+        enable: true #勾选启用ipv4=true，反则=false
+        gettype: url #使用接口获取=url、使用通过网卡获取=netInterface
+        url: https://myip.ipip.net, https://ddns.oray.com/checkip, https://ip.3322.net, https://4.ipw.cn
+        netinterface: eth1 #ipv4的网卡，liunx可使用ip a命令查看
+        cmd: ""
+        domains:
+            - ip.abc.com #您的域名
+      ipv6: #ipv6部分
+        enable: true #勾选启用ipv6=true，反则=false
+        gettype: netInterface #使用接口获取=url、使用通过网卡获取=netInterface
+        url: https://speed.neu6.edu.cn/getIP.php, https://v6.ident.me, https://6.ipw.cn
+        netinterface: eth0 #ipv6的网卡，liunx可使用ip a命令查看
+        cmd: ""
+        ipv6reg: '' #正则表达式
+        domains:
+            - ip.abc.com  #您的域名
+      dns:
+        name: cloudflare #DNS服务商
+        id: ""
+        secret:  #cloudflare的token
+      ttl: ""
+user:
+    username: #登录管理页面用户名称
+    password: #登录管理页面用户密码
+webhook:
+    webhookurl: ""
+    webhookrequestbody: ""
+    webhookheaders: ""
+notallowwanaccess: false #是否允许外网登录
+lang: zh #管理页面的语言
+````
 
 
 
